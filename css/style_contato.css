@@ -1,0 +1,36 @@
+﻿/* 
+* Criado por Danilo Silva Andrade - 04/03/2020 
+*/
+
+/* layout do Form */
+.contemform{
+	border:1px dashed #0099ff;
+	width: 500px;	
+	padding: 50px;
+}
+
+#nome,#email,#telefone,#assunto,#msg,#enviar{
+	border: solid 1px #cccccc;
+	width: 380px;
+	height: 35px;
+	font-size: small;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	background-color:#FFF;
+	
+	}
+	
+/* Layout do Botão Enviar*/
+ .art-button {
+	border: 0;
+	border-collapse: separate;
+	-webkit-background-origin: border !important;
+	-moz-background-origin: border !important;
+	background-origin: border-box !important;
+	background: #0099ff;
+	color:#FFF;
+	padding:0 20px;
+	margin:0 auto;
+	height:27px;
+}

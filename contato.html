@@ -1,0 +1,45 @@
+<!-- 
+* Criado por Danilo Silva Andrade - 04/03/2020 
+-->
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+      <!-- Chama a folha de estilo do Formulário -->
+      <link rel="stylesheet" href="css/style_contato.css" type="text/css" media="screen" />
+      
+      <!-- Chama a validação .JS para o Formulário --> 
+      <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+      <script type="text/javascript" src="js/validaForm.js"></script>
+      <script type="text/javascript" src="js/functionStorage.js"></script>
+  </head>
+
+  <body>
+      <!-- Usei aqui as validações Html5 tambem-->      
+      <form action="#" class="contemform" method="post" id="contato" name="contato" onSubmit="return validacontato()" enctype="multipart/form-data">        
+        <label><b>FORMULÁRIO DE CONTATO</b></label>
+        <hr></hr>
+          <label><p align="left">Nome</p></label>
+          <input type="text" required=“required” id="nome" name="nome" placeholder=" Informe seu nome..."/>
+          <br />
+          <label><p align="left">Email</p></label>
+          <input type="email" required=“required” id="email" name="email" placeholder=" Informe seu e-mail..."/>
+          <br />
+          <label><p align="left">Telefone</p></label>
+          <input type="tel" required=“required” id="telefone" name="telefone" pattern="\([0-9]{2}\)[\s][0-9]{5}-[0-9]{4}" placeholder=" Informe seu telefone. Ex:(16) 99301-1008"/>
+          <br />
+          <label><p align="left">Assunto</p></label>
+          <input type="text" required=“required” id="assunto" name="assunto" placeholder=" Qual o assunto?..."/>
+          <br />
+          <label><p align="left">Mensagem</p></label>
+          <textarea type="text" required=“required”  id="mensagem" name="mensagem" cols="50" rows="5" placeholder="Escreva aqui sua Mensagem...."></textarea>
+          <br /><br />
+          <input type="submit" value="Enviar " class="art-button" name="submit" />          
+      </form>
+      
+      <label><strong>RESULTADOS</strong></label>
+      <br /><br />
+      <table id="tblListar"></table>
+
+  </body>
+</html>
